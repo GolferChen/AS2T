@@ -33,6 +33,10 @@ for eps in ["pair-1", "pair-2", "pair-3"]:
         item = "    <embed src='" + url + "'/>\n"
         writer.write(item)
 
+for eps in ["pair-1", "pair-2", "pair-3", "pair-4"]:
+    for audio_name in os.listdir("E:\\Documents\\research\\tdsc-attack\\minor-revision\\human-study\\use\\final-use\\res-16\\other\\" + eps):
+        url = 'other' + "/" + eps + "/" + audio_name
+
 # exper1_csv = "D:\\Git\\GolferChen.github.io\\adversarialVPR\\human-study\\human-study-pre-test\\amozon-mturk\\exper1.csv"
 # data = pd.read_csv(exper1_csv)
 # for i in range(len(data)):
